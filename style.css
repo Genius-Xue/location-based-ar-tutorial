@@ -16,12 +16,12 @@ button {
     align-items: center;
     justify-content: center;
     border: 2px solid white;
-    background-color: transparent;
+    background-color: black;
     width: 2em;
     height: 2em;
     border-radius: 100%;
     font-size: 2em;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 145, 220, 0.4);
     color: white;
     outline: none;
 }
