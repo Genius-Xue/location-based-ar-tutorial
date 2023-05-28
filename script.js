@@ -22,7 +22,7 @@ var models = [
     {
         url: './assets/magnemite/scene.gltf',
         scale: '0.5 0.5 0.5',
-        info: 'Magnemite, Magnemite emit electromagnetic energy from its horseshoe magnets in order to keep afloat',
+        info: 'Magnemite emit electromagnetic energy from its horseshoe magnets in order to keep afloat',
         rotation: '0 180 0',
     },
     {
