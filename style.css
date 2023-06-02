@@ -1,6 +1,6 @@
 .centered {
     height: 20%;
-    justify-content: center;
+    margin: 25px 50px 75px 100px;
     position: fixed;
     bottom: 0%;
     display: flex;
