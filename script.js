@@ -1,6 +1,9 @@
 window.onload = () => {
-    const button = document.querySelector('button[data-action="change"]');
-    button.innerText = '*';
+    const button1 = document.querySelector('button1[data-action="change"]');
+    button1.innerText = 'Scenario1';
+
+    const button2 = document.querySelector('button2[data-action="change"]');
+    button2.innerText = 'Scenario2';
 
     let places = staticLoadPlaces();
     renderPlaces(places);
