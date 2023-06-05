@@ -11,7 +11,7 @@
     <script>
         THREEx.ArToolkitContext.baseURL = 'https://raw.githack.com/jeromeetienne/ar.js/master/three.js/'
     </script>
-    <script src="./script.js"></script>
+    
     <link rel="stylesheet" type="text/css" href="./style.css"/>
 </head>
 
@@ -24,6 +24,8 @@
     <a-camera gps-camera rotation-reader></a-camera>
 </a-scene>
 <div class="centered">
-    <button data-action="change"></button>
+    <button data-action="change" id="button1">Scenario1</button>
+    <button data-action="change" id="button2">Scenario2</button>
 </div>
+<script src="./script.js"></script>
 </body>
