@@ -1,10 +1,10 @@
-// window.onload = () => {
-//     const button = document.querySelector('button[data-action="change"]');
-//     button.innerText = '';
+window.onload = () => {
+    const button = document.querySelector('button[data-action="change"]');
+    button.innerText = 'scenario 2';
 
-//     let places = staticLoadPlaces();
-//     renderPlaces(places);
-// };
+    let places = staticLoadPlaces();
+    renderPlaces(places);
+};
 
 function staticLoadPlaces() {
     return [
