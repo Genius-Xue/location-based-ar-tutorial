@@ -1,26 +1,36 @@
 window.onload = () => {
-    const button1 = document.getElementById('button1');
-    const button2 = document.getElementById('button2');
-    button1.innerText = 'Scenario 1';
-    button2.innerText = 'Scenario 2';
-    // const button = document.querySelector('button[data-action="change"]');
-    // button.innerText = 'scenario 1';
-    button1.addEventListener('click', () => {
-        // Load the first 3D object
-        const loader = new THREE.GLTFLoader();
-        loader.load('articuno.glb', (gltf) => {
-          scene.add(gltf.scene);
-        });
-      });
+    document.querySelector("#button1").addEventListener("click", (e)=> {
+        document.querySelector("#anime1").setAttribute("visible", true);
+        document.querySelector("#anime2").setAttribute("visible", false);
+      })
+      
+    document.querySelector("#button2").addEventListener("click", (e)=> {
+        document.querySelector("#anime1").setAttribute("visible", false);
+        document.querySelector("#anime2").setAttribute("visible", true);
+      })
 
-    button2.addEventListener('click', () => {
-        // Load the second 3D object
-        const loader = new THREE.GLTFLoader();
-        loader.load('dragonite.glb', (gltf) => {
-          scene.add(gltf.scene);
-        });
-      });
 
+    // const button1 = document.getElementById('button1');
+    // const button2 = document.getElementById('button2');
+    // button1.innerText = 'Scenario 1';
+    // button2.innerText = 'Scenario 2';
+    // // const button = document.querySelector('button[data-action="change"]');
+    // // button.innerText = 'scenario 1';
+    // button1.addEventListener('click', () => {
+    //     // Load the first 3D object
+    //     const loader = new THREE.GLTFLoader();
+    //     loader.load('articuno.glb', (gltf) => {
+    //       scene.add(gltf.scene);
+    //     });
+    //   });
+
+    // button2.addEventListener('click', () => {
+    //     // Load the second 3D object
+    //     const loader = new THREE.GLTFLoader();
+    //     loader.load('dragonite.glb', (gltf) => {
+    //       scene.add(gltf.scene);
+    //     });
+    //   });
 
     let places = staticLoadPlaces();
     renderPlaces(places);
