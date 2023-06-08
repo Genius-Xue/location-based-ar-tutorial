@@ -1,27 +1,27 @@
 
 
 window.onload = () => {
-    document.querySelector('#button1').addEventListener('click', function() {
-        let anime1 = document.querySelector('#anime1');
-        let anime2 = document.querySelector('#anime2');
-        anime1.setAttribute('animation-mixer', {clip: 'anime1', loop: 'repeat'});
-        anime2.removeAttribute('animation-mixer');
-      });
+    // document.querySelector('#button1').addEventListener('click', function() {
+    //     let anime1 = document.querySelector('#anime1');
+    //     let anime2 = document.querySelector('#anime2');
+    //     anime1.setAttribute('animation-mixer', {clip: 'anime1', loop: 'repeat'});
+    //     anime2.removeAttribute('animation-mixer');
+    //   });
       
-      document.querySelector('#button2').addEventListener('click', function() {
-        let anime1 = document.querySelector('#anime1');
-        let anime2 = document.querySelector('#anime2');
-        anime2.setAttribute('animation-mixer', {clip: 'anime2', loop: 'repeat'});
-        anime1.removeAttribute('animation-mixer');
-      });
+    //   document.querySelector('#button2').addEventListener('click', function() {
+    //     let anime1 = document.querySelector('#anime1');
+    //     let anime2 = document.querySelector('#anime2');
+    //     anime2.setAttribute('animation-mixer', {clip: 'anime2', loop: 'repeat'});
+    //     anime1.removeAttribute('animation-mixer');
+    //   });
 
 
     // const button1 = document.getElementById('button1');
     // const button2 = document.getElementById('button2');
-    // button1.innerText = 'Scenario 1';
-    // button2.innerText = 'Scenario 2';
-    // // const button = document.querySelector('button[data-action="change"]');
-    // // button.innerText = 'scenario 1';
+    // // button1.innerText = 'Scenario 1';
+    // // button2.innerText = 'Scenario 2';
+    // // // const button = document.querySelector('button[data-action="change"]');
+    // // // button.innerText = 'scenario 1';
     // button1.addEventListener('click', () => {
     //     // Load the first 3D object
     //     const loader = new THREE.GLTFLoader();
@@ -37,6 +37,17 @@ window.onload = () => {
     //       scene.add(gltf.scene);
     //     });
     //   });
+
+    document.querySelector("#button1").addEventListener("click", (e)=> {
+        document.querySelector("#anime1").setAttribute("visible", true);
+        document.querySelector("#anime2").setAttribute("visible", false);
+      })
+      
+    document.querySelector("#button2").addEventListener("click", (e)=> {
+        document.querySelector("#anime1").setAttribute("visible", false);
+        document.querySelector("#anime2").setAttribute("visible", true);
+      })
+
 
     let places = staticLoadPlaces();
     renderPlaces(places);
